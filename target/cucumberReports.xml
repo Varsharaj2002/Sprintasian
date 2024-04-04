@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.27" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="Paints module" name="speak to professional in colour catalogue" time="0.006">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+And I fill in the form with valid details...................................passed
+And I submit the form.......................................................passed
+Then I should receive a confirmation message indicating that my details have been submitted successfully.passed
+]]></system-out>
+</testcase>
+<testcase classname="Paints module" name="speak to professional form invalid pincode" time="0">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+And I fill in the form with invalid details.................................passed
+And I click submit the form.................................................passed
+Then I should receive a error message.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Paints module" name="wallpaper section actions" time="0.001">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+When I navigate to the Paints & Colours section and navigate to wallpapers..passed
+And I click on good earth wallpapers........................................passed
+And I select abstract and botanical and botanicalandfloral filters..........passed
+Then the selected wallpaper are filtered....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Paints module" name="wallpaper section clear filter action" time="0">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+When I navigate  to wallpapers and add filters..............................passed
+And I click on clear all....................................................passed
+Then the selected filteres  are cleared.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Paints module" name="exterior textures clicking filters to submit" time="0.002">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+When I navigate  to exterior textures.......................................passed
+And I click on  filters.....................................................passed
+And I click on Apex Createx Dholpur and Economy.............................passed
+Then I can see the filtered results after clicking submit...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Paints module" name="Submit enquiry form with valid inputs - Example #1.1" time="0">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+When I fill in the enquiry form.............................................passed
+And enters the name "varsha"................................................passed
+And enters the email "varsha@gmail.com".....................................passed
+And enters the phonenumber "9951536053".....................................passed
+And enter the pincode "530013"..............................................passed
+And I click on the Submit button............................................passed
+Then I should see a confirmation message....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Paints module" name="Submit enquiry form with valid inputs - Example #1.2" time="0.001">
+<system-out><![CDATA[
+Given I am on the Asian Paints website......................................passed
+When I fill in the enquiry form.............................................passed
+And enters the name "venkat"................................................passed
+And enters the email "raj.smith@gmail.com"..................................passed
+And enters the phonenumber "9951536066".....................................passed
+And enter the pincode "530014"..............................................passed
+And I click on the Submit button............................................passed
+Then I should see a confirmation message....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
